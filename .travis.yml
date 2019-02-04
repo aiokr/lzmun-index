@@ -1,0 +1,17 @@
+language: node_js
+dist: trusty
+node_js:
+  - "8"
+install:
+  - npm install
+script:
+  - npm run clean
+  - npm run generate
+  - chmod +x ./deploy.sh
+  - \cp -f assets/CNAME public/CNAME
+  # - \cp -f assets/.nojekyll /.nojekyll
+  - ./deploy.sh > /dev/null
+  - npm run clean
+cache:
+  directories:
+    - node_modules
