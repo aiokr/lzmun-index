@@ -11,7 +11,7 @@ script:
   - \cp -f assets/CNAME public/CNAME
   # - \cp -f assets/.nojekyll /.nojekyll
   - ./deploy.sh > /dev/null
-  - npm run clean
+  - hexo clean
 cache:
   directories:
     - node_modules
