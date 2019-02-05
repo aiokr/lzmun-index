@@ -6,6 +6,7 @@ install:
   - npm install
 script:
   - hexo clean
+  - \cp -f README.md source\_posts\README.md
   - hexo g
   - chmod +x ./deploy.sh
   - \cp -f assets/CNAME public/CNAME
