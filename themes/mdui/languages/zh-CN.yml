@@ -16,7 +16,7 @@ archive:
   more: '更多'
   less: '更少'
 posts:
-  posted: '编写时间：'
+  posted: '更新时间：'
   edited: '最后修改时间：'
   header: '我的文章'
   public: '公开'

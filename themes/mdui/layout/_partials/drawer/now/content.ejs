@@ -1,3 +1,8 @@
+<style>
+.mdui-list {
+    padding: 0px 0;
+}
+</style>
 <div class="content">
   <div class="hexo">
     <% if (is_home()) { %>
@@ -49,10 +54,7 @@
 
       </div>
     <% } %>
-  </div>
-  <% if (theme.pages !== null) { %>
-    <div class="pages">
-      <div class="mdui-list" mdui-collapse="{accordion: true}" mdui-collapse>
+    <div class="mdui-list" mdui-collapse="{accordion: true}" mdui-collapse>
         <% for (var i in theme.pages) { %>
           <% if (theme.pages[i].cascade === true) { %>
             <div class="mdui-collapse-item">
@@ -95,6 +97,5 @@
           <% } %>
         <% } %>
       </div>
-    </div>
-  <% } %>
+  </div>
 </div>

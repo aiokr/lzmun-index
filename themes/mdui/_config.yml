@@ -105,25 +105,25 @@ pace: false
 random_pics: 44
 
 pages:
-#  Test1:
-#    link: "/myfriends"
-#    md: "&#xe0ba;"
-#  Test2:
-#    link: "/apply-for-link"
-#    fa: "fa-child"
-#  Test3:
-#    link: "/timeline"
-#    md: "home"
-#  Test4:
-#    cascade: true
-#    md: 'home'
-#    pages:
-#      TEST1:
-#        link: "/myfriends"
-#        md: "&#xe5ca;"
-#      TEST2:
-#        link: "/timeline"
-#        md: "home"
+  报名通道:
+    cascade: true
+    md: 'home'
+    pages:
+      组委会:
+        link: "/myfriends"
+        md: "&#xe5ca;"
+      学术团队:
+        link: "/timeline"
+        md: "home"
+      志愿者:
+        link: ""
+        md: ""
+      个人代表:
+        link: ""
+        md: ""
+      团队代表:
+        link: ""
+        md: ""
 
 sns:
 #  Twitter:
