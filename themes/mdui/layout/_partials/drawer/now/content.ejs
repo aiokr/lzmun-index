@@ -1,8 +1,4 @@
-<style>
-.mdui-list {
-    padding: 0px 0;
-}
-</style>
+<style>.mdui-list {padding: 0 0;}</style>
 <div class="content">
   <div class="hexo">
     <% if (is_home()) { %>
@@ -29,7 +25,7 @@
     <% if (!is_year() && is_archive()) { %>
       <div class="mdui-list no-padding-top">
         <li class="mdui-list-item mdui-ripple mdui-list-item-active">
-          <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme-accent">&#xe149;</i>
+          <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme-accent">&#xe307;</i>
           <div class="mdui-list-item-content mdui-text-color-theme-accent">
             <%= __('global.archives') %>
             <span class="badge new mdui-color-theme-accent" data-badge-caption=""><%= site.posts.length %></span>
@@ -40,7 +36,7 @@
       <div class="mdui-list no-padding">
         <a href="<%= config.root %>archives">
           <li class="mdui-list-item mdui-ripple">
-            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe149;</i>
+            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe307;</i>
             <div class="mdui-list-item-content">
               <%= __('global.archives') %>
               <span class="badge new mdui-color-theme-accent" data-badge-caption=""><%= site.posts.length %></span>
@@ -73,14 +69,14 @@
               </div>
               <div class="mdui-collapse-item-body mdui-list">
                 <% for (var x in theme.pages[i].pages) { %>
-                  <a href="<%= theme.pages[i].pages[x].link %>" class="mdui-list-item mdui-ripple" target="_blank">
+                  <a href="<%= theme.pages[i].pages[x].link %>" class="mdui-list-item mdui-ripple">
                     <%= x %>
                   </a>
                 <% } %>
               </div>
             </div>
           <% } else { %>
-            <a href="<%= theme.pages[i].link %>" target="_blank">
+            <a href="<%= theme.pages[i].link %>">
               <li class="mdui-list-item mdui-ripple">
                 <% if (theme.pages[i].fa) { %>
                   <i class="mdui-list-item-icon mdui-icon fa <%= theme.pages[i].fa %> mdui-text-center"></i>

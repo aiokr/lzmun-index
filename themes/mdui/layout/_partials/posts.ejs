@@ -19,9 +19,6 @@
   <div class="mdui-card-content posts-content">
     <div class="posts-excerpt">
       <a href="<%= url_for(post.path) %>" target="_self" class="posts-title mdui-typo-title no-text-decoration">
-        <% if (post.pinned === true) { %>
-          <span style="color: #D50000"><%= '['+ __('posts.pinned') + '] ' %></span>
-        <% } %>
         <%= post.title %>
       </a>
       <div class="posts-strip mdui-typo-body-1">
@@ -37,13 +34,6 @@
     <div class="mdui-divider" style="margin: 0 16px;"></div>
     <div class="posts-bottom">
       <% if (post.categories && post.categories.length) { %>
-        <div class="mdui-chip">
-          <span class="mdui-chip-icon"><i class="mdui-icon
-          <% if (theme.color.layout !== 'dark') { %>
-            mdui-text-color-black-icon
-          <% } %>
-           material-icons mdui-text-center">&#xe149;</i></span>
-        </div>
         <div class="content mdui-typo">
           <% post.categories.map(function(category){ %>
             <a href="<%= config.root %>categories/<%= category.name %>/">
@@ -53,13 +43,6 @@
         </div>
       <% } %>
       <% if (post.tags && post.tags.length) { %>
-        <div class="mdui-chip">
-          <span class="mdui-chip-icon"><i class="mdui-icon
-           <% if (theme.color.layout !== 'dark') { %>
-             mdui-text-color-black-icon
-           <% } %>
-           fa fa-tags mdui-text-center"></i></span>
-        </div>
         <div class="content mdui-typo">
           <% post.tags.map(function(tag){  %>
             <a href="<%= config.root %>tags/<%= tag.name %>/">

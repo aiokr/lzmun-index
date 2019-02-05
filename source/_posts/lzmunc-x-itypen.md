@@ -3,6 +3,7 @@ title: 宣布 LZMUNC x iTypen
 date: 2019-02-04 18:16:32
 tags:
 categories: 未分类
+pinned: true
 ---
 
 ## 关于柳州模联 LZMUNC

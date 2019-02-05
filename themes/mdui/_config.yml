@@ -18,7 +18,7 @@ head:
 
 # color
 color:
-  primary_color: "indigo"
+  primary_color: "blue"
   accent_color: "blue"
   layout:
   random:
@@ -107,14 +107,14 @@ random_pics: 44
 pages:
   报名通道:
     cascade: true
-    md: 'home'
+    md: '&#xe8ef;'
     pages:
       组委会:
-        link: "/myfriends"
-        md: "&#xe5ca;"
+        link: ""
+        md: ""
       学术团队:
-        link: "/timeline"
-        md: "home"
+        link: ""
+        md: ""
       志愿者:
         link: ""
         md: ""
@@ -124,6 +124,9 @@ pages:
       团队代表:
         link: ""
         md: ""
+  取得联系:
+    md: "&#xe0ba;"
+    link: "/contact-info/"
 
 sns:
 #  Twitter:
