@@ -409,7 +409,6 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 36px;
-    color: inherit;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -424,7 +423,6 @@
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
-    background: transparent;
     border: none;
     border-radius: 2px;
     outline: none;
