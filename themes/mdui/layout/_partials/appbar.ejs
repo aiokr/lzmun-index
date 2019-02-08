@@ -10,7 +10,7 @@ if (page.path === 'search/index.html') pageTitle = __('search.text');
 <% //appbar for index
   if (is_home())
 { %>
-  <div class="mdui-appbar animate-appbar mdui-shadow-0 mdui-appbar-fixed" id="blog-appbar">
+  <div class="mdui-appbar animate-appbar mdui-shadow-0 mdui-appbar-fixed">
     <div class="mdui-toolbar">
       <button class="mdui-btn mdui-ripple mdui-btn-icon drawer-button" mdui-drawer="{target: '#drawer'}">
         <i class="mdui-icon">
@@ -22,7 +22,7 @@ if (page.path === 'search/index.html') pageTitle = __('search.text');
 <% //appbar for post and custom page
   } else if (!is_home() && !is_archive() && !is_year() && !is_month() && !is_category() && !is_tag() && page.path !== 'search/index.html' && page.layout !== 'galleries' && page.layout !== 'gallery' && page.layout !== 'friends')
 { %>
-  <div class="mdui-appbar mdui-shadow-0 mdui-appbar-fixed animate-appbar" id="blog-appbar">
+  <div class="mdui-appbar mdui-shadow-0 mdui-appbar-fixed animate-appbar" style="background-color: white">
     <div class="mdui-toolbar mdui-color-theme">
       <button class="mdui-btn mdui-ripple mdui-btn-icon drawer-button" mdui-drawer="{target: '#drawer'}">
         <i class="mdui-icon">
@@ -60,8 +60,8 @@ if (page.path === 'search/index.html') pageTitle = __('search.text');
 <% // appbar for friends, category, tag, year page
   } else if (page.layout === 'friends' || is_category() || is_tag() || is_year())
 { %>
-    <div class="mdui-appbar animate-appbar mdui-shadow-0 mdui-appbar-fixed" id="blog-appbar">
-      <div class="mdui-toolbar mdui-color-theme mdui-shadow-2">
+    <div class="mdui-appbar animate-appbar mdui-shadow-0 mdui-appbar-fixed" style="background-color: white">
+      <div class="mdui-toolbar mdui-color-theme mdui-shadow-0">
         <button class="mdui-btn mdui-ripple mdui-btn-icon drawer-button" mdui-drawer="{target: '#drawer'}">
           <i class="mdui-icon">
             <span></span>
@@ -108,8 +108,8 @@ if (page.path === 'search/index.html') pageTitle = __('search.text');
   <% // appbar for archive page
     } else if (is_archive() && page.path !== 'search/index.html')
   { %>
-      <div class="mdui-appbar mdui-appbar-fixed animate-appbar mdui-shadow-0" id="blog-appbar">
-        <div class="mdui-toolbar mdui-color-theme mdui-shadow-2">
+      <div class="mdui-appbar mdui-appbar-fixed animate-appbar mdui-shadow-0" style="background-color: white">
+        <div class="mdui-toolbar mdui-color-theme mdui-shadow-0">
           <button class="mdui-btn mdui-ripple mdui-btn-icon drawer-button" mdui-drawer="{target: '#drawer'}">
             <i class="mdui-icon">
               <span></span>
