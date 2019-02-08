@@ -137,9 +137,15 @@
         <div class="padding"></div>
         <% if (page.comment !== false) { %>
           <% if (theme.comment.use) { %>
-            <div class="posts-line">
-              <div class="mdui-divider"></div>
+            <div class="feed-header">
+              <div class="feed-title">
+                发表评论
+              </div>
+              <div class="feed-subtitle">
+                Comment
+              </div>
             </div>
+            <div class="padding-15"></div>
             <div class="post-comment">
               <%- partial('_partials/comment') %>
             </div>

@@ -1,6 +1,5 @@
 .gitment-container {
-    font-family: sans-serif;
-    font-size: 14px;
+    font-family: Roboto;
     line-height: 1.5;
     color: #333;
     word-wrap: break-word;
@@ -87,7 +86,7 @@
   
   a.gitment-header-issue-link,
   a.gitment-header-issue-link:visited {
-    font-family: Notofo;
+    font-family: Roboto;
     float: right;
     line-height: 30px;
     color: #666;
@@ -131,7 +130,7 @@
   .gitment-editor-avatar svg {
     width: 44px;
     height: 44px;
-    border-radius: 3px;
+    border-radius: 50%;
   }
   
   .gitment-editor-avatar .gitment-github-icon {
@@ -201,7 +200,7 @@
   }
   
   .gitment-editor-tab {
-    font-family: Notofo;
+    font-family: Roboto;
     display: inline-block;
     padding: 11px 12px;
     font-size: 14px;
@@ -228,7 +227,7 @@
   }
   
   .gitment-editor-login {
-    font-family: Notofo;
+    font-family: Roboto;
     float: right;
     margin-top: -30px;
     margin-right: 15px;
@@ -359,7 +358,7 @@
   }
   
   a.gitment-editor-footer-tip {
-    font-family: Notofo;
+    font-family: Roboto;
     display: inline-block;
     padding-top: 10px;
     font-size: 12px;

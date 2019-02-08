@@ -3,8 +3,8 @@ const myGitmentTheme = {
         const container = document.createElement('div')
         container.lang = "en-US"
         container.className = 'gitment-container gitment-root-container'
-        container.appendChild(instance.renderHeader(state, instance))
         container.appendChild(instance.renderEditor(state, instance))
+        container.appendChild(instance.renderHeader(state, instance))
         container.appendChild(instance.renderComments(state, instance))
         container.appendChild(instance.renderFooter(state, instance))
         return container
@@ -2884,12 +2884,14 @@ function renderHeader(_ref, instance) {
   commentsCount.innerHTML = '\n    ' + (meta.comments ? ' \u2022 <strong>' + meta.comments + '</strong> Comments' : '') + '\n  ';
   container.appendChild(commentsCount);
 
+  /*
   var issueLink = document.createElement('a');
   issueLink.className = 'gitment-header-issue-link';
   issueLink.href = meta.html_url;
   issueLink.target = '_blank';
   issueLink.innerText = 'Issue Page';
   container.appendChild(issueLink);
+  */
 
   return container;
 }
