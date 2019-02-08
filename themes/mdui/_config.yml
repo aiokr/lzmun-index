@@ -68,7 +68,7 @@ share_menu:
 
 # use:disqus, valine or custom
 comment:
-    use:
+    use: gitment
     shortname:
     # https://valine.js.org
     valine:
@@ -79,6 +79,11 @@ comment:
       avatar: mm # gravatar style
       placeholder: Just go go # comment box placeholder
       guest_info: nick,mail,link # reviewer attributes
+    gitment:
+      owner: aiokr
+      repo: LZMUN-comment
+      client_id: d287205e23e29633d711
+      client_secret: 9ec6775ca9910e4fa4887b0cf176bacf3b83316f
 
 # pagination
 # github@zllovesuki
