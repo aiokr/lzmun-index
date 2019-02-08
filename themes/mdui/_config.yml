@@ -18,16 +18,17 @@ head:
 
 # color
 color:
-  primary_color: "blue"
-  accent_color: "blue"
+  primary_color: "white"
+  accent_color: "white"
   layout:
   random:
-  bg_color: "#eeeeee"
+  bg_color: "#fff"
 
 # appbar
 appbar:
   title: "柳州模联"
   search: false
+  text_logo: true
 
 index:
   welcome: "Welcome to my blog~"
