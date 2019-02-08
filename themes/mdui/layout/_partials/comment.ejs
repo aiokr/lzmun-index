@@ -47,8 +47,9 @@
 <% } %>
 
 <% if(theme.comment.use === 'gitment') { %>
-<div id="container"></div>
 <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="/js/gitment.js"></script>
+<div id="container"></div>
 <script>
   var gitment = new Gitment({
     id: '页面 ID', // 可选。默认为 location.href
@@ -62,5 +63,4 @@
   })
   gitment.render('container')
 </script>
-<script src="/js/gitment.js"></script>
 <% } %>
