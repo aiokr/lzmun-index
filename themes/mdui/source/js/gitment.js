@@ -1,16 +1,3 @@
-const myGitmentTheme = {
-    render(state, instance) {
-        const container = document.createElement('div')
-        container.lang = "en-US"
-        container.className = 'gitment-container gitment-root-container'
-        container.appendChild(instance.renderEditor(state, instance))
-        container.appendChild(instance.renderHeader(state, instance))
-        container.appendChild(instance.renderComments(state, instance))
-        container.appendChild(instance.renderFooter(state, instance))
-        return container
-    },
-}
-
 var Gitment =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -2884,14 +2871,12 @@ function renderHeader(_ref, instance) {
   commentsCount.innerHTML = '\n    ' + (meta.comments ? ' \u2022 <strong>' + meta.comments + '</strong> Comments' : '') + '\n  ';
   container.appendChild(commentsCount);
 
-  /*
   var issueLink = document.createElement('a');
   issueLink.className = 'gitment-header-issue-link';
   issueLink.href = meta.html_url;
   issueLink.target = '_blank';
   issueLink.innerText = 'Issue Page';
   container.appendChild(issueLink);
-  */
 
   return container;
 }
@@ -3131,6 +3116,7 @@ function renderFooter() {
   var container = document.createElement('div');
   container.lang = "en-US";
   container.className = 'gitment-container gitment-footer-container';
+  container.innerHTML = '\n    Powered by\n    <a class="gitment-footer-project-link" href="https://github.com/imsun/gitment" target="_blank">\n      Gitment\n    </a>\n  ';
   return container;
 }
 
@@ -3215,6 +3201,8 @@ function ajaxFactory(method) {
     var data = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
     var base = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'https://api.github.com';
 
+    var headers = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
+
     var req = new XMLHttpRequest();
     var token = localStorage.getItem(_constants.LS_ACCESS_TOKEN_KEY);
 
@@ -3252,6 +3240,11 @@ function ajaxFactory(method) {
     if (method !== 'GET' && method !== 'DELETE') {
       body = JSON.stringify(data);
       req.setRequestHeader('Content-Type', 'application/json');
+    }
+
+    //设置自定义的 header
+    for(let header in headers){
+        req.setRequestHeader([header], headers[header]);
     }
 
     req.send(body);
@@ -3427,11 +3420,11 @@ var Gitment = function () {
       }, options);
 
       this.state.user.isLoggingIn = true;
-      _utils.http.post('https://gitment.itypen.com/', {
+      _utils.http.post('https://cors.wenjunjiang.win/?remoteUrl=https://github.com/login/oauth/access_token', {
         code: code,
         client_id: client_id,
         client_secret: client_secret
-      }, '').then(function (data) {
+      }, '',{Accept:'application/json'}).then(function (data) {
         _this.accessToken = data.access_token;
         _this.update();
       }).catch(function (e) {
