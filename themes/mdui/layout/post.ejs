@@ -99,10 +99,6 @@
             </span>
             <br />
             <span><%= __('posts.permalink') %><a href="<%= page.permalink %>"><%= page.permalink %></a></span>
-            <% if (page.export_md !== false) { %>
-              <br />
-              <span><%= __('posts.markdown') %><a href="<%= page.permalink + page.slug + '.md' %>"><%= page.permalink + page.slug + '.md' %></a></span>
-            <% } %>
           </div>
         <% } %>
 
@@ -138,6 +134,7 @@
             <% } %>
           </div>
         <% } %>
+        <div class="padding"></div>
         <% if (page.comment !== false) { %>
           <% if (theme.comment.use) { %>
             <div class="posts-line">

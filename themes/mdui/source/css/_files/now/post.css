@@ -119,11 +119,11 @@ body.mdui-drawer-body-left .post-bg-color {
 }
 
 .post-container div.warning, .post-container div.license {
-  border-left-color: #D50000;
+  border-left-color: #4285f4;
 }
 
 .post-container div.warning:before {
-  background-color: #D50000;
+  background-color: #4285f4;
   border-radius: 100%;
   color: #fff;
   content: "!";

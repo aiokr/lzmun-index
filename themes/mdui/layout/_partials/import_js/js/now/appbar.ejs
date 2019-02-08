@@ -12,11 +12,11 @@
 
       var pageLocation = divTop - bodyTop;
       if (!pageFlag && pageLocation < 0) {
-        toolbar.classList.add('mdui-shadow-2')
+        // toolbar.classList.add('mdui-shadow-0')
         appbar.enable();
         pageFlag = true;
       } else if (pageFlag && pageLocation >= 0) {
-        toolbar.classList.remove('mdui-shadow-2')
+        toolbar.classList.remove('mdui-shadow-0')
         appbar.disable();
         pageFlag = false;
       }
