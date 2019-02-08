@@ -127,7 +127,7 @@ pages:
         md: ""
   取得联系:
     md: "&#xe0ba;"
-    link: "/contact-info/"
+    link: "/contact/"
 
 sns:
 #  Twitter:
