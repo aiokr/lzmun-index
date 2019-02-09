@@ -20,9 +20,10 @@
 <% } %>
 
 <% if(theme.comment.use === 'valine') { %>
+  <link rel="stylesheet" href="/css/valine.css">
   <div id="comments"></div>
   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  <script src="/js/valine.js"></script>
   <script>
     var notify = '<%= theme.comment.valine.notify %>' == true ? true : false;
     var verify = '<%= theme.comment.valine.verify %>' == true ? true : false;
