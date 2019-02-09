@@ -3238,6 +3238,7 @@ function ajaxFactory(method) {
     if (method !== 'GET' && method !== 'DELETE') {
       body = JSON.stringify(data);
       req.setRequestHeader('Content-Type', 'application/json');
+      req.setRequestHeader('Accept', 'application/json');
     }
 
     req.send(body);
@@ -3748,4 +3749,3 @@ var spinner = exports.spinner = '<svg class="gitment-spinner-icon" xmlns="http:/
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=gitment.browser.js.map
