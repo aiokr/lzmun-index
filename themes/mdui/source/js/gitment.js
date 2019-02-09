@@ -3413,7 +3413,7 @@ var Gitment = function () {
       }, options);
 
       this.state.user.isLoggingIn = true;
-      _utils.http.post('https://gitment.lzmun.com/', {
+      _utils.http.post('https://access.lzmun.com/', {
         code: code,
         client_id: client_id,
         client_secret: client_secret
