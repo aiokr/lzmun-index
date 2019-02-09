@@ -315,9 +315,7 @@
     max-width: 100%;
     margin: 0;
     line-height: 1.6;
-  
     background-color: #fff;
-  
     color: #333;
     vertical-align: middle;
     border: none;
@@ -437,7 +435,7 @@
   
   .gitment-editor-submit:hover,
   .gitment-comments-init-btn:hover {
-    background-color: #fff;
+    background-color: #1967d2;
   }
   
   .gitment-comments-init-btn:disabled,
