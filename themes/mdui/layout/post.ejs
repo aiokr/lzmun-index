@@ -44,8 +44,19 @@
     <% } %>
   ">
     <div class="post-header-container">
-      <div class="post-title mdui-text-truncate"><%= date(page.date, 'MMM DD, YYYY') %></div>
+      <div class="post-title mdui-text-truncate"><%= page.title %></div>
       <div class="post-actions mdui-valign">
+        <div>
+          <span><%= __('posts.posted') %></span>
+          <span style="float: right"><%= date(page.date, 'MMM DD, YYYY') %></span>
+          <%  var posted = date(page.date, 'MMM DD, YYYY')
+              var edited = date(page.updated, 'MMM DD, YYYY')
+              if (posted !== edited) { %>
+          <br>
+            <span><%= __('posts.edited') %></span>
+            <span><%= edited %></span>
+          <% } %>
+        </div>
         <%- partial('_partials/menu/qrcode') %>
         <%- partial('_partials/menu/post_share') %>
       </div>
@@ -99,6 +110,10 @@
             </span>
             <br />
             <span><%= __('posts.permalink') %><a href="<%= page.permalink %>"><%= page.permalink %></a></span>
+            <% if (page.export_md !== false) { %>
+              <br />
+              <span><%= __('posts.markdown') %><a href="<%= page.permalink + page.slug + '.md' %>"><%= page.permalink + page.slug + '.md' %></a></span>
+            <% } %>
           </div>
         <% } %>
 
@@ -134,17 +149,8 @@
             <% } %>
           </div>
         <% } %>
-        <div class="padding"></div>
         <% if (page.comment !== false) { %>
           <% if (theme.comment.use) { %>
-            <div class="feed-header">
-              <div class="feed-title">
-                发表评论
-              </div>
-              <div class="feed-subtitle">
-                Comment
-              </div>
-            </div>
             <div class="padding-15"></div>
             <div class="post-comment">
               <%- partial('_partials/comment') %>

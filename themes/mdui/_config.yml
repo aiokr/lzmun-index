@@ -133,6 +133,9 @@ pages:
   取得联系:
     md: "&#xe0ba;"
     link: "/contact/"
+  合作伙伴:
+    md: "&#xe0af;"
+    link: "/friends/"
 
 sns:
 #  Twitter:

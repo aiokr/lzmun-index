@@ -32,7 +32,8 @@
     float: left;
     line-height: 36px;
     font-size: 24px;
-    padding-top: 15px
+    padding-top: 15px;
+    color: #757575;
 }
 
 .feed-subtitle{
@@ -40,9 +41,9 @@
     display: inline-block;
     float: right;
     line-height: 36px;
-    font-size: 20px;
+    font-size: 18px;
     padding-top: 15px;
-    color: #757575;
+    color: #4285f4;
 }
 
 .index-feed-card{
