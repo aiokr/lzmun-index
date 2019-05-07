@@ -1,32 +1,32 @@
-@font-face{
+@font-face {
     font-family: 'Product';
-    src: url("/fonts/productsans.ttf"); 
+    src: url("/fonts/productsans.ttf");
 
 }
 
-.padding{
+.padding {
     padding: 35px
 }
 
-.padding-25{
+.padding-25 {
     padding: 25px
 }
 
-.padding-15{
+.padding-15 {
     padding: 15px
 }
 
-.index-logo-text{
+.index-logo-text {
     font-family: Product;
     font-size: 48px;
 }
 
-.feed-header{
+.feed-header {
     border-top: 4px solid #4285f4;
     padding: 20px 0;
 }
 
-.feed-title{
+.feed-title {
     font-family: 'Product,Roboto,Noto,Helvetica,Arial,sans-serif';
     display: inline-block;
     float: left;
@@ -36,7 +36,7 @@
     color: #757575;
 }
 
-.feed-subtitle{
+.feed-subtitle {
     font-family: 'Product';
     display: inline-block;
     float: right;
@@ -46,11 +46,11 @@
     color: #4285f4;
 }
 
-.index-feed-card{
+.index-feed-card {
     padding: 0 0 0 0;
 }
 
-.index-feed-content{
+.index-feed-content {
     padding-top: 5px;
     padding-right: 0;
     padding-left: 0;
@@ -61,3 +61,49 @@
     background-color: #ffffff;
 }
 */
+
+p {
+    margin: 1.5em 5px !important;
+    font-size: 16px !important;
+    color: #222831;
+    line-height: 1.8em;
+    letter-spacing: 0.1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 20px 0 10px;
+    padding: 0;
+    font-style: bold !important;
+    color: #5588a3 !important;
+    margin: 1.5em 5px !important;
+    text-align: left !important;
+}
+
+h1 {
+    font-size: 22px !important;
+}
+
+h2 {
+    font-size: 20px !important;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+h6 {
+    font-size: 16px;
+}
